@@ -1,0 +1,44 @@
+.class-1{
+    background-color:red;
+    position: absolute;
+    width:150px;
+    z-index:3;
+    left:30px;
+}
+.class-2{
+    background-color:green;
+    position: absolute;
+    width:150px;
+    z-index:1;
+}
+.class-3{
+    background-color:blue;
+    position: absolute;
+    width:150px;
+    z-index: -5;
+}
+.overflow-div{
+    height:50px;
+    width:460px;
+    overflow: visible;
+    background-color: grey;
+    color: black;
+}
+p::before{
+background-color: red;
+height:90px;
+content: "test";
+}
+p::selection{
+    background-color: green;
+}
+.test-element::first-letter{
+    background-color:black;
+    color:white;
+}
+p:nth-child(1){
+background-color: red;;
+}
+a:visited{
+ color:aqua;
+}

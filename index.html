@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description of website ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="alternate" href="www.example.com/ar/home" hreflang="ar">
+    <link rel="import" href="component.html">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+   --Tags Struture and Documentation :
+   <section class="heading">
+   1-headings From 1-6 (open-close tag // block tag)
+   <h1>Heading 1</h1>
+   <h2>Heading 2</h2>
+   <h3>Heading 3</h3>
+   <h4>heading 4</h4>
+   <h5>heading 5</h5>
+   <h6>heading 6</h6>
+   </section>
+   <section class="Pargraphs" >
+   2-pargraphs 
+   A:Pargraph with default style (open-close tag // block tag)
+   <p>Lorem ipsum dolor sit amet consectetur </p>
+   B:Pargraph with Editor style (open-close tag // block tag)
+   <pre>Lorem ipsum dolor sit amet consectetur</pre>
+   c:Pargraph with  qoute style (open-close tag // block tag)
+   <blockquote>  Lorem ipsum dolor sit amet consectetur  </blockquote>
+   d: abbreviation  tag
+   <abbr title="Internet Protocol">Ip </abbr>
+   E: Contanct information 
+   <address>
+    Visit us at:<br>
+    Example.com<br>
+    700 , Plaestine<br>
+    Gaza
+    </address>
+    <!-- Text style tags -->
+    3- text style tags
+    <br>
+    a:italic font: (open-close tag // inline tag)
+    <i>text 1</i> 
+    <br>
+    b:emphsize  :
+    <em>text 2</em>
+    <br>
+    c:mark tag :
+    <mark>text 3</mark>
+    <br>
+    D:bold font :
+    <b>text 4</b>
+    <br>
+    E:small size font :
+    <small>text 5</small>
+    <br>
+   F:strong font :
+   <strong>text 6</strong>
+   <br>
+   G: cite font :
+   <cite> text 7 </cite>
+   <br>
+   H: qouted text 
+   <q> text 8 </q> 
+   <br>
+   I: deleted text 
+   <del> deleted text </del>
+   <br>
+   J:inserted text 
+   <ins> inserted text</ins>
+   </section>
+   lists : (open-close tags -block elements)
+   <section class="list" >
+   a: order list : 
+   <ol start="">
+        <li>First</li>
+        <li>Second</li>
+   </ol>
+   b: unordered list :
+   <ul>
+    <li>list 1</li>
+    <li>list 2</li>
+   </ul>
+   c: description list 
+   <dl>
+    <dt> title list</dt>
+        <dd>list 1</dd> 
+   </dl>
+   </section>
+   Graphic tags : (open-close tags / one tag - inline elements)
+   <section class="media-graphical-tags">
+    icon tag :
+    <span class="fa-solid fa-house"></span>
+   <br>
+    svg tag : 
+    <svg >
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="10" fill="yellow" />
+    </svg>
+    <br>
+    image tag :
+    <img src="http://placehold.it/150x150" width="10px" height="10px" alt="text-img">
+    picture tag : 
+      <picture>
+        <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+        <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+        <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+      </picture>
+      <br>
+      video tag :
+      <video autoplay controls>
+          <source src="movie.mp4" type="video/mp4">
+        </video>
+        <br>
+        audio tag :
+        <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+          </audio>
+          <br>
+          map tag : 
+          <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+          <map name="workmap">
+           <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+           <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+           <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+         </map>
+    <iframe src="http://maps.googleapis.com/maps" width="100%"></iframe>
+    <a href="mailto=" target="_blank" >text</a>
+   </section>
+   Form tag with input fields : 
+   <section class="form-tag">
+     <form action="http://" autocomplete enctype="multipart/form-data" method="post">
+     <legend>Form Test</legend>
+        <label for="name">name</label>
+        <input type="text" id="name" placeholder="enter your name" maxlength="10" required readonly disabled >
+        <label for="search">search</label>
+        <input type="search" id="search" placeholder="enter your search " required   >
+        <label for="number">number</label>
+        <input type="number" id="number" placeholder="enter your number"  step="4"  max="10" min="3" >
+        <label for="telephone">telephone</label>
+        <input type="tel" id="telephone" placeholder="enter your telephone"  pattern="[0-3]3" >
+        <label for="date">date</label>
+        <input type="date" id="date" placeholder="enter your date" required   min="2023-10-1"  max="2023-10-2" >
+        <label for="month">month</label>
+        <input type="month" id="month" placeholder="enter your month" required   >
+        <label for="time">time</label>
+        <input type="time" id="time" placeholder="enter your time"  min="15:00"  max="20:00">
+        <label for="week">week</label>
+        <input type="week" id="week" placeholder="enter your week" required   min="2018-W18" max="2018-W26" >
+        <label for="email">email</label>
+        <input type="email" id="email" placeholder="enter your email" required   >
+        <label for="password">password</label>
+        <input type="password" id="password" placeholder="enter your password" required   >
+        <label for="url">url</label>
+        <input type="url" id="url" placeholder="enter your url" required   >
+        <label for="color">color</label>
+        <input type="color" id="color" hidden placeholder="enter your color " required   >
+        <label for="range">range</label>
+        <input type="range" id="range" placeholder="enter your range " min="0" max="100" value="90" step="10" required   >
+        <label for="reset">reset</label>
+        <input type="reset" id="reset" placeholder="enter your reset "   >
+        <label for="file">file</label>
+        <input type="file" id="file" placeholder="enter your file " multiple  >
+
+        <!-- select options -->
+        1-radio option
+        <input type="radio" id="male" name="male" value="male" />
+        <label for="male">male</label>
+        <input type="radio" checked id="female" name="female" value="female" />
+        <label for="female">female</label>
+        2-checkobox  option :
+        <input type="checkbox" id="day"  value="day" />
+        <label for="day">sunday</label>
+        <input type="checkbox"  checked id="monday"  value="monday" />
+        <label for="monday">monday</label>
+        1-dropdown option :
+         <select>
+             <option value="" selected> </option>
+         </select>
+         <button class="submit" > submit </button>
+      </form>
+   </section>
+   table section :
+   <section class="table-tag">
+   <table>
+    <thaed>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    </thaed>
+    <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+   </tbody> 
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+  </table>
+  </section>
+  Empty tags: 
+  <section class="empty tag">
+    <hr> <br>
+  </section>
+  Aside tag : 
+  <section class="asidetag">
+   <aside>
+    <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+      </details>
+    </aside>
+   </section>
+   non semantic elements :
+   <section class="nonsemantic">
+    div element :
+    <div>
+        <p> &lt;p lorem</p>
+    </div>
+    <span>for icons and texts</span>
+   </section>
+    <section class="z-index">
+      <div class="class-1">
+       1
+      </div>
+      <div class="class-2">
+        2
+       </div>
+       <div class="class-3">
+        3
+       </div>
+    </section>
+    <br>
+    <div>
+    <a href="https://fontawesome.com/icons/house?f=classic&s=solid" target="_blank">test</a>
+  </div>
+    <p class="test-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestias sapiente qui sit! Recusandae nihil molestiae expedita sint facilis incidunt quis doloremque facere ullam doloribus porro libero, provident, animi eos.</p>
+    <section class="overflow">
+    <div class="overflow-div">
+      text 1 <br>
+      text 2 <br>
+      text 3 <br>
+      text 4 <br>
+      text 5 <br>
+      text 6 <br>
+    </div>
+    
+    </section>
+    <br>
+ 
+   </main>
+   <footer>
+
+   </footer>
+</body>
+</html>
